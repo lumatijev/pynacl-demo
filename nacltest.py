@@ -196,7 +196,7 @@ while x != ord('5'):
 		screen.border(0)
 		screen.addstr(1, 1, 'Speed testing NaCl library cryptography methods', curses.A_STANDOUT)
 
-		data = open('lorem' + chr(k) + '.txt').read()
+		data = open('test/lorem' + chr(k) + '.txt').read()
 
 		startingTime = time.time()
 		box, encrypted = symmetricEncryption(data)
